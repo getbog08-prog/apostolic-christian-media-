@@ -1,4 +1,6 @@
 ---
+layout: teaching.njk
+---
 title: God is one
 category: "Bible teaching "
 ---

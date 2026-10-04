@@ -1,7 +1,0 @@
-{
-  "tags": [
-    "teachings"
-  ],
-  "layout": "teaching.njk",
-  "permalink": "/{{ title | slug }}/"
-}

@@ -1,0 +1,94 @@
+---
+permalink: /teachings.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Christian Teachings | Apostolic Christian Media</title>
+
+  <meta
+    name="description"
+    content="Christian teachings, Bible studies, and Apostolic messages from Apostolic Christian Media."
+  >
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+
+    <a href="/" class="brand">
+      <img src="/logo.png" alt="Apostolic Christian Media logo">
+    </a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/index.html#articles">Articles</a>
+      <a href="/index.html#studies">Bible Studies</a>
+      <a href="/index.html#resources">Resources</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="section">
+
+    <div class="container">
+
+      <h1>Christian Teachings</h1>
+
+      <p>
+        Bible teachings and Apostolic Christian messages.
+      </p>
+
+      <div id="teachings-list">
+
+        {% for teaching in collections.teachings %}
+
+        <article class="teaching-card">
+
+          <h2>{{ teaching.data.title }}</h2>
+
+          {% if teaching.data.category %}
+          <p>
+            <strong>Category:</strong>
+            {{ teaching.data.category }}
+          </p>
+          {% endif %}
+
+          <a href="{{ teaching.url }}">
+            Read Teaching →
+          </a>
+
+        </article>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+
+    <p>© 2026 Apostolic Christian Media. All rights reserved.</p>
+
+    <p>Contact: Getu Bogale</p>
+
+  </div>
+</footer>
+
+</body>
+</html>

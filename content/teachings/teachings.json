@@ -1,3 +1,4 @@
 {
-  "permalink": "/{{ page.fileSlug }}/"
+  "layout": "teaching.njk",
+  "permalink": "/{{ title | slug }}/"
 }

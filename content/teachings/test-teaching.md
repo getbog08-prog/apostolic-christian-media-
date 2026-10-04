@@ -1,4 +1,5 @@
 ---
+layout: teaching.njk
 title: "Test teaching "
 category: Test
 ---

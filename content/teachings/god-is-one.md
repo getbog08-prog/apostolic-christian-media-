@@ -1,6 +1,5 @@
 ---
-layout: teaching.njk
-title: God is one
-category: "Bible teaching"
+title: "My new teaching "
+category: "Bible study "
 ---
-God is one, and His name is Jesus Christ.
+This is my new teaching published through the CMS.

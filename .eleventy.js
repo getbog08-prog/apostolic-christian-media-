@@ -6,10 +6,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("bible-study-guide.docx");
 
   return {
-  dir: {
-    input: ".",
-    includes: "_includes",
-    output: "_site"
-  },
-  templateFormats: ["md", "njk"]
+    dir: {
+      input: ".",
+      includes: "_includes",
+      output: "_site"
+    },
+    templateFormats: ["md", "njk"]
+  };
 };

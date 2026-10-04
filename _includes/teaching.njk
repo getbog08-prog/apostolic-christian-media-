@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Apostolic Christian Media</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Apostolic Christian Media</h1>
+    <a href="/">Home</a>
+  </header>
+
+  <main>
+    <article>
+      <h1>{{ title }}</h1>
+
+      {% if category %}
+      <p><strong>Category:</strong> {{ category }}</p>
+      {% endif %}
+
+      <div>
+        {{ content | safe }}
+      </div>
+
+      {% if image %}
+      <img src="{{ image }}" alt="{{ title }}" style="max-width:100%;">
+      {% endif %}
+
+      {% if pdf %}
+      <p>
+        <a href="{{ pdf }}" target="_blank">📄 Download PDF</a>
+      </p>
+      {% endif %}
+
+      {% if docx %}
+      <p>
+        <a href="{{ docx }}" target="_blank">📝 Download Word/DOCX</a>
+      </p>
+      {% endif %}
+    </article>
+  </main>
+
+</body>
+</html>

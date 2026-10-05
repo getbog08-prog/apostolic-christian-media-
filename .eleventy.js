@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("uploads");
   eleventyConfig.addPassthroughCopy("bible-study-guide.pdf");
   eleventyConfig.addPassthroughCopy("bible-study-guide.docx");
+  eleventyConfig.addPassthroughCopy("admin");
 
   return {
     dir: {
